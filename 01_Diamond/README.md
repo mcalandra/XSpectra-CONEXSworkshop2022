@@ -5,6 +5,7 @@
 Diamond example with no core-hole
 
 - <code>mpirun -np 4 pw.x -inp diamond.scf.in > diamond.scf.out</code>
+- <code>../tools/upf2plotcore.sh ../pseudopotentials/C_PBE_TM_2pj.UPF > C.wfc</code>
 - <code>mpirun -np 4 xspectra.x -inp diamond.xspectra.in > diamond.xspectra.out</code>
 - <code>mpirun -np 4 xspectra.x -inp diamond.xspectra_replot.in > diamond.xspectra_replot.out</code>
 
