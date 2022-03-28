@@ -1,0 +1,33 @@
+ &input
+     title='C',
+     prefix='C',
+     zed=6.0,
+     rel=0,
+     rlderiv=2.0,
+     beta=0.5,
+     eminld=-4.0,
+     emaxld=4.0,
+     deld=0.02d0,
+     nld=1,
+     config='1s2 2s2 2p1.5 3s0 3p0 ',
+     iswitch=3,
+     dft='LDA',
+ /
+ &inputp
+   pseudotype=1,
+   lloc=1,
+   file_pseudopw='C.lda-mt_gipaw.UPF',
+   tm=.true.,
+   lgipaw_reconstruction=.true.,
+ /
+2
+2S  1  0  2.00  0.00  1.5  1.5
+2P  2  1  1.50  0.00  1.5  1.5
+ &test
+ /
+4
+2S  1  0  2.00  0.00  1.5  1.5
+3S  2  0  0.00  0.00  1.5  1.5
+2P  2  1  1.50  0.00  1.5  1.5
+3P  3  1  0.00  0.00  1.5  1.5
+
